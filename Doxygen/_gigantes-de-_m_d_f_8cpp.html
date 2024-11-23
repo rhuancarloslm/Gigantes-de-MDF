@@ -1,0 +1,889 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Gigantes de MDF: Referência do Arquivo Gigantes-de-MDF/Gigantes-de-MDF.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Gigantes de MDF
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_c60b3c87bd04581d6f25f944b1307fe9.html">Gigantes-de-MDF</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
+<a href="#func-members">Funções</a> &#124;
+<a href="#var-members">Variáveis</a>  </div>
+  <div class="headertitle"><div class="title">Referência do Arquivo Gigantes-de-MDF.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
+<code>#include &lt;avr/interrupt.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a52375c74de7b0a5ccb04581396867bcf" id="r_a52375c74de7b0a5ccb04581396867bcf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52375c74de7b0a5ccb04581396867bcf">FREC_CPU</a>&#160;&#160;&#160;16000000UL</td></tr>
+<tr class="separator:a52375c74de7b0a5ccb04581396867bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a53a6c94a70cc286e300a0ea8f46ba4" id="r_a6a53a6c94a70cc286e300a0ea8f46ba4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a53a6c94a70cc286e300a0ea8f46ba4">USART_BAUDRATE</a>&#160;&#160;&#160;9600</td></tr>
+<tr class="separator:a6a53a6c94a70cc286e300a0ea8f46ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9db3464aa99027082d9daf5f43a95d" id="r_a7a9db3464aa99027082d9daf5f43a95d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a9db3464aa99027082d9daf5f43a95d">BAUD_PRESCALER</a>&#160;&#160;&#160;((<a class="el" href="#a52375c74de7b0a5ccb04581396867bcf">FREC_CPU</a> / 16 / <a class="el" href="#a6a53a6c94a70cc286e300a0ea8f46ba4">USART_BAUDRATE</a>) - 1)</td></tr>
+<tr class="separator:a7a9db3464aa99027082d9daf5f43a95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a2dfd2d9fbdae014f53d71a37166ef4" id="r_a3a2dfd2d9fbdae014f53d71a37166ef4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a2dfd2d9fbdae014f53d71a37166ef4">MOTOR_PORT</a>&#160;&#160;&#160;PORTB</td></tr>
+<tr class="separator:a3a2dfd2d9fbdae014f53d71a37166ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c6bf127d3a3cc88cd473dc7591520e" id="r_a10c6bf127d3a3cc88cd473dc7591520e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10c6bf127d3a3cc88cd473dc7591520e">MOTOR_DDR</a>&#160;&#160;&#160;DDRB</td></tr>
+<tr class="separator:a10c6bf127d3a3cc88cd473dc7591520e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f506f11381d4319fd4649499ca22421" id="r_a3f506f11381d4319fd4649499ca22421"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>&#160;&#160;&#160;PB1</td></tr>
+<tr class="separator:a3f506f11381d4319fd4649499ca22421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6690fcc8fcc9eabac2fa96489fd48fb4" id="r_a6690fcc8fcc9eabac2fa96489fd48fb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>&#160;&#160;&#160;PB2</td></tr>
+<tr class="separator:a6690fcc8fcc9eabac2fa96489fd48fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a617959df94162684a6c544d2d201dfd0" id="r_a617959df94162684a6c544d2d201dfd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>&#160;&#160;&#160;PB3</td></tr>
+<tr class="separator:a617959df94162684a6c544d2d201dfd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663daa01e565aee93c6f20c5845b90b4" id="r_a663daa01e565aee93c6f20c5845b90b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a>&#160;&#160;&#160;PORTC</td></tr>
+<tr class="separator:a663daa01e565aee93c6f20c5845b90b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2eb4252b35effe1188cb61b6124fa617" id="r_a2eb4252b35effe1188cb61b6124fa617"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eb4252b35effe1188cb61b6124fa617">LED_DDR</a>&#160;&#160;&#160;DDRC</td></tr>
+<tr class="separator:a2eb4252b35effe1188cb61b6124fa617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c037402d180e5bb71588ea0439b7f" id="r_abc8c037402d180e5bb71588ea0439b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc8c037402d180e5bb71588ea0439b7f">RECEPTOR_PIN</a>&#160;&#160;&#160;PC0</td></tr>
+<tr class="separator:abc8c037402d180e5bb71588ea0439b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae994d17d63dc3fbb2f52e106ac76ce63" id="r_ae994d17d63dc3fbb2f52e106ac76ce63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae994d17d63dc3fbb2f52e106ac76ce63">LED_PIN_1</a>&#160;&#160;&#160;PC2</td></tr>
+<tr class="separator:ae994d17d63dc3fbb2f52e106ac76ce63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86d49149bbf5f49a2497e05f9b54ded1" id="r_a86d49149bbf5f49a2497e05f9b54ded1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86d49149bbf5f49a2497e05f9b54ded1">LED_PIN_2</a>&#160;&#160;&#160;PC3</td></tr>
+<tr class="separator:a86d49149bbf5f49a2497e05f9b54ded1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba7b026a2fa69a388ba236f49fe9eb6" id="r_afba7b026a2fa69a388ba236f49fe9eb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afba7b026a2fa69a388ba236f49fe9eb6">LED_PIN_3</a>&#160;&#160;&#160;PC4</td></tr>
+<tr class="separator:afba7b026a2fa69a388ba236f49fe9eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f5803169b049a5832800dc2383d010" id="r_a45f5803169b049a5832800dc2383d010"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>&#160;&#160;&#160;PC5</td></tr>
+<tr class="separator:a45f5803169b049a5832800dc2383d010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d85a9aa1b6a88f12a25903e303fdf07" id="r_a7d85a9aa1b6a88f12a25903e303fdf07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d85a9aa1b6a88f12a25903e303fdf07">INPUT3_PORT</a>&#160;&#160;&#160;PORTD</td></tr>
+<tr class="separator:a7d85a9aa1b6a88f12a25903e303fdf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147c900022d48780e251bb9f8a525c87" id="r_a147c900022d48780e251bb9f8a525c87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a147c900022d48780e251bb9f8a525c87">INPUT3_DDR</a>&#160;&#160;&#160;DDRD</td></tr>
+<tr class="separator:a147c900022d48780e251bb9f8a525c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9d653da2130053504ef9152a86835f" id="r_a5f9d653da2130053504ef9152a86835f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>&#160;&#160;&#160;PD3</td></tr>
+<tr class="separator:a5f9d653da2130053504ef9152a86835f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a4fc01d736fe50cf5b977f755b675f11d" id="r_a4fc01d736fe50cf5b977f755b675f11d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a> ()</td></tr>
+<tr class="separator:a4fc01d736fe50cf5b977f755b675f11d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb467f9c95e64d4a036d52ef400e1fc" id="r_a6fb467f9c95e64d4a036d52ef400e1fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fb467f9c95e64d4a036d52ef400e1fc">stopTimer0</a> (void)</td></tr>
+<tr class="separator:a6fb467f9c95e64d4a036d52ef400e1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5c8d105a0b2c208dd88d6e6369bbd0" id="r_a9b5c8d105a0b2c208dd88d6e6369bbd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b5c8d105a0b2c208dd88d6e6369bbd0">startTimer0</a> (void)</td></tr>
+<tr class="separator:a9b5c8d105a0b2c208dd88d6e6369bbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff16e71b60910d906946fa080fa15f71" id="r_aff16e71b60910d906946fa080fa15f71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff16e71b60910d906946fa080fa15f71">stopTimer1</a> (void)</td></tr>
+<tr class="separator:aff16e71b60910d906946fa080fa15f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68dbef8e8c3dcf55ea2d76c8566cb105" id="r_a68dbef8e8c3dcf55ea2d76c8566cb105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68dbef8e8c3dcf55ea2d76c8566cb105">startTimer1</a> (void)</td></tr>
+<tr class="separator:a68dbef8e8c3dcf55ea2d76c8566cb105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae4bcfe4f7a97c36d689d5e28a3666b6" id="r_aae4bcfe4f7a97c36d689d5e28a3666b6"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae4bcfe4f7a97c36d689d5e28a3666b6">adc_read</a> (uint8_t channel)</td></tr>
+<tr class="separator:aae4bcfe4f7a97c36d689d5e28a3666b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ce999e15ad60b8a3f07d08af1946f9" id="r_a09ce999e15ad60b8a3f07d08af1946f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09ce999e15ad60b8a3f07d08af1946f9">ISR</a> (USART_RX_vect)</td></tr>
+<tr class="separator:a09ce999e15ad60b8a3f07d08af1946f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec43762dc86e029b395d4e5819192c2d" id="r_aec43762dc86e029b395d4e5819192c2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec43762dc86e029b395d4e5819192c2d">ISR</a> (TIMER0_COMPA_vect)</td></tr>
+<tr class="separator:aec43762dc86e029b395d4e5819192c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39420cdd896dd12c68e36313139d0a5" id="r_ad39420cdd896dd12c68e36313139d0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad39420cdd896dd12c68e36313139d0a5">ISR</a> (TIMER1_COMPA_vect)</td></tr>
+<tr class="separator:ad39420cdd896dd12c68e36313139d0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6035149a64d5f448fbda08e9d1b67f" id="r_afe6035149a64d5f448fbda08e9d1b67f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe6035149a64d5f448fbda08e9d1b67f">ISR</a> (PCINT1_vect)</td></tr>
+<tr class="separator:afe6035149a64d5f448fbda08e9d1b67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea150fcd685610cb9f7672fce361e53" id="r_afea150fcd685610cb9f7672fce361e53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afea150fcd685610cb9f7672fce361e53">ISR</a> (INT0_vect)</td></tr>
+<tr class="separator:afea150fcd685610cb9f7672fce361e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variáveis</h2></td></tr>
+<tr class="memitem:adaffaeb89cf09b081ce407428026d007" id="r_adaffaeb89cf09b081ce407428026d007"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adaffaeb89cf09b081ce407428026d007">vidas</a> = 3</td></tr>
+<tr class="separator:adaffaeb89cf09b081ce407428026d007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c13b0fdc9fea2c36ac8fd9fd0ab838" id="r_a71c13b0fdc9fea2c36ac8fd9fd0ab838"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">tot</a> = 0</td></tr>
+<tr class="separator:a71c13b0fdc9fea2c36ac8fd9fd0ab838"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7897361688454104475a975cdb2728c8" id="r_a7897361688454104475a975cdb2728c8"><td class="memItemLeft" align="right" valign="top">volatile uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a></td></tr>
+<tr class="separator:a7897361688454104475a975cdb2728c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a id="a7a9db3464aa99027082d9daf5f43a95d" name="a7a9db3464aa99027082d9daf5f43a95d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a9db3464aa99027082d9daf5f43a95d">&#9670;&#160;</a></span>BAUD_PRESCALER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BAUD_PRESCALER&#160;&#160;&#160;((<a class="el" href="#a52375c74de7b0a5ccb04581396867bcf">FREC_CPU</a> / 16 / <a class="el" href="#a6a53a6c94a70cc286e300a0ea8f46ba4">USART_BAUDRATE</a>) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52375c74de7b0a5ccb04581396867bcf" name="a52375c74de7b0a5ccb04581396867bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52375c74de7b0a5ccb04581396867bcf">&#9670;&#160;</a></span>FREC_CPU</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FREC_CPU&#160;&#160;&#160;16000000UL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6690fcc8fcc9eabac2fa96489fd48fb4" name="a6690fcc8fcc9eabac2fa96489fd48fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6690fcc8fcc9eabac2fa96489fd48fb4">&#9670;&#160;</a></span>INPUT1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT1&#160;&#160;&#160;PB2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f506f11381d4319fd4649499ca22421" name="a3f506f11381d4319fd4649499ca22421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f506f11381d4319fd4649499ca22421">&#9670;&#160;</a></span>INPUT2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT2&#160;&#160;&#160;PB1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f9d653da2130053504ef9152a86835f" name="a5f9d653da2130053504ef9152a86835f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f9d653da2130053504ef9152a86835f">&#9670;&#160;</a></span>INPUT3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT3&#160;&#160;&#160;PD3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a147c900022d48780e251bb9f8a525c87" name="a147c900022d48780e251bb9f8a525c87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a147c900022d48780e251bb9f8a525c87">&#9670;&#160;</a></span>INPUT3_DDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT3_DDR&#160;&#160;&#160;DDRD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d85a9aa1b6a88f12a25903e303fdf07" name="a7d85a9aa1b6a88f12a25903e303fdf07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d85a9aa1b6a88f12a25903e303fdf07">&#9670;&#160;</a></span>INPUT3_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT3_PORT&#160;&#160;&#160;PORTD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a617959df94162684a6c544d2d201dfd0" name="a617959df94162684a6c544d2d201dfd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a617959df94162684a6c544d2d201dfd0">&#9670;&#160;</a></span>INPUT4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INPUT4&#160;&#160;&#160;PB3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a45f5803169b049a5832800dc2383d010" name="a45f5803169b049a5832800dc2383d010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f5803169b049a5832800dc2383d010">&#9670;&#160;</a></span>LASER_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LASER_PIN&#160;&#160;&#160;PC5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2eb4252b35effe1188cb61b6124fa617" name="a2eb4252b35effe1188cb61b6124fa617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb4252b35effe1188cb61b6124fa617">&#9670;&#160;</a></span>LED_DDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_DDR&#160;&#160;&#160;DDRC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae994d17d63dc3fbb2f52e106ac76ce63" name="ae994d17d63dc3fbb2f52e106ac76ce63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae994d17d63dc3fbb2f52e106ac76ce63">&#9670;&#160;</a></span>LED_PIN_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_PIN_1&#160;&#160;&#160;PC2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86d49149bbf5f49a2497e05f9b54ded1" name="a86d49149bbf5f49a2497e05f9b54ded1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86d49149bbf5f49a2497e05f9b54ded1">&#9670;&#160;</a></span>LED_PIN_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_PIN_2&#160;&#160;&#160;PC3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afba7b026a2fa69a388ba236f49fe9eb6" name="afba7b026a2fa69a388ba236f49fe9eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afba7b026a2fa69a388ba236f49fe9eb6">&#9670;&#160;</a></span>LED_PIN_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_PIN_3&#160;&#160;&#160;PC4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a663daa01e565aee93c6f20c5845b90b4" name="a663daa01e565aee93c6f20c5845b90b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663daa01e565aee93c6f20c5845b90b4">&#9670;&#160;</a></span>LED_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_PORT&#160;&#160;&#160;PORTC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10c6bf127d3a3cc88cd473dc7591520e" name="a10c6bf127d3a3cc88cd473dc7591520e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10c6bf127d3a3cc88cd473dc7591520e">&#9670;&#160;</a></span>MOTOR_DDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_DDR&#160;&#160;&#160;DDRB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a2dfd2d9fbdae014f53d71a37166ef4" name="a3a2dfd2d9fbdae014f53d71a37166ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a2dfd2d9fbdae014f53d71a37166ef4">&#9670;&#160;</a></span>MOTOR_PORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MOTOR_PORT&#160;&#160;&#160;PORTB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc8c037402d180e5bb71588ea0439b7f" name="abc8c037402d180e5bb71588ea0439b7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8c037402d180e5bb71588ea0439b7f">&#9670;&#160;</a></span>RECEPTOR_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RECEPTOR_PIN&#160;&#160;&#160;PC0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a53a6c94a70cc286e300a0ea8f46ba4" name="a6a53a6c94a70cc286e300a0ea8f46ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a53a6c94a70cc286e300a0ea8f46ba4">&#9670;&#160;</a></span>USART_BAUDRATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define USART_BAUDRATE&#160;&#160;&#160;9600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="aae4bcfe4f7a97c36d689d5e28a3666b6" name="aae4bcfe4f7a97c36d689d5e28a3666b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae4bcfe4f7a97c36d689d5e28a3666b6">&#9670;&#160;</a></span>adc_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t adc_read </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>channel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  124</span>{</div>
+<div class="line"><span class="lineno">  125</span>    <span class="comment">// Seleciona o canal ADC</span></div>
+<div class="line"><span class="lineno">  126</span>    ADMUX = (ADMUX &amp; 0xF0) | (channel &amp; 0x0F);</div>
+<div class="line"><span class="lineno">  127</span> </div>
+<div class="line"><span class="lineno">  128</span>    <span class="comment">// Começa a conversão</span></div>
+<div class="line"><span class="lineno">  129</span>    ADCSRA |= (1 &lt;&lt; ADSC);</div>
+<div class="line"><span class="lineno">  130</span> </div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">// Espera a conversão ser finalizada</span></div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">while</span> (ADCSRA &amp; (1 &lt;&lt; ADSC));</div>
+<div class="line"><span class="lineno">  133</span>    <span class="keywordflow">return</span> ADC;</div>
+<div class="line"><span class="lineno">  134</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afea150fcd685610cb9f7672fce361e53" name="afea150fcd685610cb9f7672fce361e53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afea150fcd685610cb9f7672fce361e53">&#9670;&#160;</a></span>ISR() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">INT0_vect</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  243</span>              {</div>
+<div class="line"><span class="lineno">  244</span>    cli();</div>
+<div class="line"><span class="lineno">  245</span>    <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> |= (1 &lt;&lt; <a class="code hl_define" href="#ae994d17d63dc3fbb2f52e106ac76ce63">LED_PIN_1</a>) | (1 &lt;&lt; <a class="code hl_define" href="#a86d49149bbf5f49a2497e05f9b54ded1">LED_PIN_2</a>) | (1 &lt;&lt; <a class="code hl_define" href="#afba7b026a2fa69a388ba236f49fe9eb6">LED_PIN_3</a>);</div>
+<div class="line"><span class="lineno">  246</span>    <a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a> = 3;</div>
+<div class="line"><span class="lineno">  247</span>    sei();</div>
+<div class="line"><span class="lineno">  248</span>}</div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a663daa01e565aee93c6f20c5845b90b4"><div class="ttname"><a href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a></div><div class="ttdeci">#define LED_PORT</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:34</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a86d49149bbf5f49a2497e05f9b54ded1"><div class="ttname"><a href="#a86d49149bbf5f49a2497e05f9b54ded1">LED_PIN_2</a></div><div class="ttdeci">#define LED_PIN_2</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:38</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_adaffaeb89cf09b081ce407428026d007"><div class="ttname"><a href="#adaffaeb89cf09b081ce407428026d007">vidas</a></div><div class="ttdeci">volatile uint8_t vidas</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:46</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_ae994d17d63dc3fbb2f52e106ac76ce63"><div class="ttname"><a href="#ae994d17d63dc3fbb2f52e106ac76ce63">LED_PIN_1</a></div><div class="ttdeci">#define LED_PIN_1</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:37</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_afba7b026a2fa69a388ba236f49fe9eb6"><div class="ttname"><a href="#afba7b026a2fa69a388ba236f49fe9eb6">LED_PIN_3</a></div><div class="ttdeci">#define LED_PIN_3</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:39</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afe6035149a64d5f448fbda08e9d1b67f" name="afe6035149a64d5f448fbda08e9d1b67f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6035149a64d5f448fbda08e9d1b67f">&#9670;&#160;</a></span>ISR() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">PCINT1_vect</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  207</span>{</div>
+<div class="line"><span class="lineno">  208</span>    <span class="comment">// Lê o valor do LDR</span></div>
+<div class="line"><span class="lineno">  209</span>    uint16_t ldr_value = <a class="code hl_function" href="#aae4bcfe4f7a97c36d689d5e28a3666b6">adc_read</a>(0);</div>
+<div class="line"><span class="lineno">  210</span> </div>
+<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">if</span> (PINC &amp; (1 &lt;&lt; PC0))</div>
+<div class="line"><span class="lineno">  212</span>    {</div>
+<div class="line"><span class="lineno">  213</span>        <span class="keywordflow">if</span> (ldr_value &lt; 600)</div>
+<div class="line"><span class="lineno">  214</span>        {</div>
+<div class="line"><span class="lineno">  215</span>            PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>);</div>
+<div class="line"><span class="lineno">  216</span> </div>
+<div class="line"><span class="lineno">  217</span>            <span class="keywordflow">if</span> (<a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a> == 3)</div>
+<div class="line"><span class="lineno">  218</span>            {</div>
+<div class="line"><span class="lineno">  219</span>                <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#afba7b026a2fa69a388ba236f49fe9eb6">LED_PIN_3</a>); <span class="comment">// Apaga o 1° LED</span></div>
+<div class="line"><span class="lineno">  220</span>                <a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a>--;    <span class="comment">// Decrementa vida</span></div>
+<div class="line"><span class="lineno">  221</span>            }</div>
+<div class="line"><span class="lineno">  222</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a> == 2)</div>
+<div class="line"><span class="lineno">  223</span>            {</div>
+<div class="line"><span class="lineno">  224</span>                <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a86d49149bbf5f49a2497e05f9b54ded1">LED_PIN_2</a>); <span class="comment">// Apaga o 2° LED</span></div>
+<div class="line"><span class="lineno">  225</span>                <a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a>--;    <span class="comment">// Decrementa vida</span></div>
+<div class="line"><span class="lineno">  226</span>            } </div>
+<div class="line"><span class="lineno">  227</span>            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a> == 1)</div>
+<div class="line"><span class="lineno">  228</span>            {</div>
+<div class="line"><span class="lineno">  229</span>                <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#ae994d17d63dc3fbb2f52e106ac76ce63">LED_PIN_1</a>); <span class="comment">// Apaga o 3° LED</span></div>
+<div class="line"><span class="lineno">  230</span>                <a class="code hl_variable" href="#adaffaeb89cf09b081ce407428026d007">vidas</a>--;    <span class="comment">// Decrementa vida</span></div>
+<div class="line"><span class="lineno">  231</span>            }</div>
+<div class="line"><span class="lineno">  232</span> </div>
+<div class="line"><span class="lineno">  233</span>            <a class="code hl_define" href="#a3a2dfd2d9fbdae014f53d71a37166ef4">MOTOR_PORT</a> |= (1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);</div>
+<div class="line"><span class="lineno">  234</span>            <a class="code hl_define" href="#a7d85a9aa1b6a88f12a25903e303fdf07">INPUT3_PORT</a> |= (1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);</div>
+<div class="line"><span class="lineno">  235</span>            <a class="code hl_define" href="#a3a2dfd2d9fbdae014f53d71a37166ef4">MOTOR_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>);</div>
+<div class="line"><span class="lineno">  236</span>            <a class="code hl_define" href="#a3a2dfd2d9fbdae014f53d71a37166ef4">MOTOR_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);</div>
+<div class="line"><span class="lineno">  237</span>            <a class="code hl_function" href="#a6fb467f9c95e64d4a036d52ef400e1fc">stopTimer0</a>();</div>
+<div class="line"><span class="lineno">  238</span>            <a class="code hl_function" href="#a68dbef8e8c3dcf55ea2d76c8566cb105">startTimer1</a>();</div>
+<div class="line"><span class="lineno">  239</span>        }</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+<div class="line"><span class="lineno">  241</span>}</div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a3a2dfd2d9fbdae014f53d71a37166ef4"><div class="ttname"><a href="#a3a2dfd2d9fbdae014f53d71a37166ef4">MOTOR_PORT</a></div><div class="ttdeci">#define MOTOR_PORT</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:28</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a3f506f11381d4319fd4649499ca22421"><div class="ttname"><a href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a></div><div class="ttdeci">#define INPUT2</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:30</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a45f5803169b049a5832800dc2383d010"><div class="ttname"><a href="#a45f5803169b049a5832800dc2383d010">LASER_PIN</a></div><div class="ttdeci">#define LASER_PIN</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:40</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a5f9d653da2130053504ef9152a86835f"><div class="ttname"><a href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a></div><div class="ttdeci">#define INPUT3</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:44</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a617959df94162684a6c544d2d201dfd0"><div class="ttname"><a href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a></div><div class="ttdeci">#define INPUT4</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:32</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a6690fcc8fcc9eabac2fa96489fd48fb4"><div class="ttname"><a href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a></div><div class="ttdeci">#define INPUT1</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:31</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a68dbef8e8c3dcf55ea2d76c8566cb105"><div class="ttname"><a href="#a68dbef8e8c3dcf55ea2d76c8566cb105">startTimer1</a></div><div class="ttdeci">void startTimer1(void)</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:118</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a6fb467f9c95e64d4a036d52ef400e1fc"><div class="ttname"><a href="#a6fb467f9c95e64d4a036d52ef400e1fc">stopTimer0</a></div><div class="ttdeci">void stopTimer0(void)</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:100</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a7d85a9aa1b6a88f12a25903e303fdf07"><div class="ttname"><a href="#a7d85a9aa1b6a88f12a25903e303fdf07">INPUT3_PORT</a></div><div class="ttdeci">#define INPUT3_PORT</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:42</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_aae4bcfe4f7a97c36d689d5e28a3666b6"><div class="ttname"><a href="#aae4bcfe4f7a97c36d689d5e28a3666b6">adc_read</a></div><div class="ttdeci">uint16_t adc_read(uint8_t channel)</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:123</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aec43762dc86e029b395d4e5819192c2d" name="aec43762dc86e029b395d4e5819192c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec43762dc86e029b395d4e5819192c2d">&#9670;&#160;</a></span>ISR() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">TIMER0_COMPA_vect</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  184</span>{</div>
+<div class="line"><span class="lineno">  185</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">tot</a> &gt;= 100)</div>
+<div class="line"><span class="lineno">  186</span>    {</div>
+<div class="line"><span class="lineno">  187</span>        <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> ^= (1 &lt;&lt; <a class="code hl_define" href="#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>); <span class="comment">// Alterna o estado do laser a cada 1 segundo</span></div>
+<div class="line"><span class="lineno">  188</span>        <a class="code hl_variable" href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">tot</a> = 0;</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  191</span>    {</div>
+<div class="line"><span class="lineno">  192</span>        <a class="code hl_variable" href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">tot</a>++;</div>
+<div class="line"><span class="lineno">  193</span>    }</div>
+<div class="line"><span class="lineno">  194</span>}</div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a71c13b0fdc9fea2c36ac8fd9fd0ab838"><div class="ttname"><a href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">tot</a></div><div class="ttdeci">volatile uint8_t tot</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:47</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad39420cdd896dd12c68e36313139d0a5" name="ad39420cdd896dd12c68e36313139d0a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39420cdd896dd12c68e36313139d0a5">&#9670;&#160;</a></span>ISR() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">TIMER1_COMPA_vect</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  197</span>{</div>
+<div class="line"><span class="lineno">  198</span>    <span class="keywordflow">if</span> (TCNT1 &gt;= OCR1A)</div>
+<div class="line"><span class="lineno">  199</span>    {</div>
+<div class="line"><span class="lineno">  200</span>        <a class="code hl_define" href="#a3a2dfd2d9fbdae014f53d71a37166ef4">MOTOR_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);  </div>
+<div class="line"><span class="lineno">  201</span>        <a class="code hl_define" href="#a7d85a9aa1b6a88f12a25903e303fdf07">INPUT3_PORT</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);</div>
+<div class="line"><span class="lineno">  202</span>    }</div>
+<div class="line"><span class="lineno">  203</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a09ce999e15ad60b8a3f07d08af1946f9" name="a09ce999e15ad60b8a3f07d08af1946f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09ce999e15ad60b8a3f07d08af1946f9">&#9670;&#160;</a></span>ISR() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ISR </td>
+          <td>(</td>
+          <td class="paramtype">USART_RX_vect</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  138</span>{</div>
+<div class="line"><span class="lineno">  139</span>    <a class="code hl_variable" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a> = UDR0; <span class="comment">// Recebe valor do serial</span></div>
+<div class="line"><span class="lineno">  140</span>    </div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a> == <span class="charliteral">&#39;W&#39;</span>) <span class="comment">// Frente</span></div>
+<div class="line"><span class="lineno">  142</span>    {</div>
+<div class="line"><span class="lineno">  143</span>    PORTB |= (1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);     <span class="comment">// 10 - m1p1</span></div>
+<div class="line"><span class="lineno">  144</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);    <span class="comment">// 11 - m1p2</span></div>
+<div class="line"><span class="lineno">  145</span>    PORTD |= (1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);     <span class="comment">// 3 - m2p1</span></div>
+<div class="line"><span class="lineno">  146</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>);    <span class="comment">// 9 - m2p2</span></div>
+<div class="line"><span class="lineno">  147</span>    }</div>
+<div class="line"><span class="lineno">  148</span>    </div>
+<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a> == <span class="charliteral">&#39;A&#39;</span>) <span class="comment">// Esquerda</span></div>
+<div class="line"><span class="lineno">  150</span>    {</div>
+<div class="line"><span class="lineno">  151</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);    <span class="comment">// 10 - m1p1</span></div>
+<div class="line"><span class="lineno">  152</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);    <span class="comment">// 11 - m1p2</span></div>
+<div class="line"><span class="lineno">  153</span>    PORTD |= (1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);     <span class="comment">// 3 - m2p1</span></div>
+<div class="line"><span class="lineno">  154</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>);    <span class="comment">// 9 - m2p2</span></div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="line"><span class="lineno">  156</span> </div>
+<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a> == <span class="charliteral">&#39;S&#39;</span>) <span class="comment">// Ré</span></div>
+<div class="line"><span class="lineno">  158</span>    {</div>
+<div class="line"><span class="lineno">  159</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);    <span class="comment">// 10 - m1p1</span></div>
+<div class="line"><span class="lineno">  160</span>    PORTB |= (1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);     <span class="comment">// 11 - m1p2</span></div>
+<div class="line"><span class="lineno">  161</span>    PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);    <span class="comment">// 3 - m2p1</span></div>
+<div class="line"><span class="lineno">  162</span>    PORTB |= (1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>);     <span class="comment">// 9 - m2p2</span></div>
+<div class="line"><span class="lineno">  163</span>    }</div>
+<div class="line"><span class="lineno">  164</span> </div>
+<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a> == <span class="charliteral">&#39;D&#39;</span>) <span class="comment">// Direita</span></div>
+<div class="line"><span class="lineno">  166</span>    {</div>
+<div class="line"><span class="lineno">  167</span>    PORTB |= (1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);     <span class="comment">// 10 - m1p1</span></div>
+<div class="line"><span class="lineno">  168</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);    <span class="comment">// 11 - m1p2</span></div>
+<div class="line"><span class="lineno">  169</span>    PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);    <span class="comment">// 3 - m2p1</span></div>
+<div class="line"><span class="lineno">  170</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>);    <span class="comment">// 9 - m2p2</span></div>
+<div class="line"><span class="lineno">  171</span>    }</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(<a class="code hl_variable" href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a> == <span class="charliteral">&#39;X&#39;</span>) <span class="comment">// Para</span></div>
+<div class="line"><span class="lineno">  174</span>    {</div>
+<div class="line"><span class="lineno">  175</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>);    <span class="comment">// 10 - m1p1</span></div>
+<div class="line"><span class="lineno">  176</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);    <span class="comment">// 11 - m1p2</span></div>
+<div class="line"><span class="lineno">  177</span>    PORTD &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);    <span class="comment">// 3 - m2p1</span></div>
+<div class="line"><span class="lineno">  178</span>    PORTB &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>);    <span class="comment">// 9 - m2p2</span></div>
+<div class="line"><span class="lineno">  179</span>    }</div>
+<div class="line"><span class="lineno">  180</span>}</div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a7897361688454104475a975cdb2728c8"><div class="ttname"><a href="#a7897361688454104475a975cdb2728c8">USART_Buffer</a></div><div class="ttdeci">volatile uint8_t USART_Buffer</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:48</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  251</span>               {</div>
+<div class="line"><span class="lineno">  252</span>    <a class="code hl_function" href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a>();</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>    <span class="keywordflow">while</span> (1)</div>
+<div class="line"><span class="lineno">  255</span>    {</div>
+<div class="line"><span class="lineno">  256</span>    }</div>
+<div class="line"><span class="lineno">  257</span>}</div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a4fc01d736fe50cf5b977f755b675f11d"><div class="ttname"><a href="#a4fc01d736fe50cf5b977f755b675f11d">setup</a></div><div class="ttdeci">void setup()</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4fc01d736fe50cf5b977f755b675f11d" name="a4fc01d736fe50cf5b977f755b675f11d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc01d736fe50cf5b977f755b675f11d">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void setup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">   52</span>{</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_define" href="#a10c6bf127d3a3cc88cd473dc7591520e">MOTOR_DDR</a> |= (1 &lt;&lt; <a class="code hl_define" href="#a6690fcc8fcc9eabac2fa96489fd48fb4">INPUT1</a>) | (1 &lt;&lt; <a class="code hl_define" href="#a3f506f11381d4319fd4649499ca22421">INPUT2</a>) | (1 &lt;&lt; <a class="code hl_define" href="#a617959df94162684a6c544d2d201dfd0">INPUT4</a>);</div>
+<div class="line"><span class="lineno">   54</span>    <a class="code hl_define" href="#a147c900022d48780e251bb9f8a525c87">INPUT3_DDR</a> |= (1 &lt;&lt; <a class="code hl_define" href="#a5f9d653da2130053504ef9152a86835f">INPUT3</a>);</div>
+<div class="line"><span class="lineno">   55</span>    DDRC |= (1 &lt;&lt; PC1);</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>    <span class="comment">// Configura LED&#39;s e laser como saída</span></div>
+<div class="line"><span class="lineno">   58</span>    <a class="code hl_define" href="#a2eb4252b35effe1188cb61b6124fa617">LED_DDR</a> |= (1 &lt;&lt; <a class="code hl_define" href="#ae994d17d63dc3fbb2f52e106ac76ce63">LED_PIN_1</a>) | (1 &lt;&lt; <a class="code hl_define" href="#a86d49149bbf5f49a2497e05f9b54ded1">LED_PIN_2</a>) | (1 &lt;&lt; <a class="code hl_define" href="#afba7b026a2fa69a388ba236f49fe9eb6">LED_PIN_3</a>);</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_define" href="#a2eb4252b35effe1188cb61b6124fa617">LED_DDR</a> |= (1 &lt;&lt; <a class="code hl_define" href="#a45f5803169b049a5832800dc2383d010">LASER_PIN</a>);</div>
+<div class="line"><span class="lineno">   60</span>    <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> |= (1 &lt;&lt; <a class="code hl_define" href="#ae994d17d63dc3fbb2f52e106ac76ce63">LED_PIN_1</a>) | (1 &lt;&lt; <a class="code hl_define" href="#a86d49149bbf5f49a2497e05f9b54ded1">LED_PIN_2</a>) | (1 &lt;&lt; <a class="code hl_define" href="#afba7b026a2fa69a388ba236f49fe9eb6">LED_PIN_3</a>); <span class="comment">// Inicialmente, todos LED&#39;s ligados</span></div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// Seta o receptor como entrada</span></div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_define" href="#a2eb4252b35effe1188cb61b6124fa617">LED_DDR</a> &amp;= ~(1 &lt;&lt; <a class="code hl_define" href="#abc8c037402d180e5bb71588ea0439b7f">RECEPTOR_PIN</a>);</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_define" href="#a663daa01e565aee93c6f20c5845b90b4">LED_PORT</a> |= (1 &lt;&lt; <a class="code hl_define" href="#abc8c037402d180e5bb71588ea0439b7f">RECEPTOR_PIN</a>); <span class="comment">// Habilita pull-up</span></div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>    <span class="comment">// Habilita a interrupção no receptor (INT0) - Reset dos LED&#39;s</span></div>
+<div class="line"><span class="lineno">   67</span>    EICRA |= (0b10 &lt;&lt; ISC00); <span class="comment">// Interrupção na borda de descida</span></div>
+<div class="line"><span class="lineno">   68</span>    EIMSK |= (1 &lt;&lt; INT0); <span class="comment">// Habilita o INT0</span></div>
+<div class="line"><span class="lineno">   69</span> </div>
+<div class="line"><span class="lineno">   70</span>    <span class="comment">// Habilita a interrupção no receptor (PCINT8) - INTERRUPÇÃO DO LDR</span></div>
+<div class="line"><span class="lineno">   71</span>    PCICR  |= (1 &lt;&lt; PCIE1);</div>
+<div class="line"><span class="lineno">   72</span>    PCMSK1 |= (1 &lt;&lt; PCINT8);</div>
+<div class="line"><span class="lineno">   73</span> </div>
+<div class="line"><span class="lineno">   74</span>    <span class="comment">// Habilita a interrupção do Timer0 para o LASER_PIN</span></div>
+<div class="line"><span class="lineno">   75</span>    TIMSK0 |= (1 &lt;&lt; OCIE0A);</div>
+<div class="line"><span class="lineno">   76</span>    TCCR0A |= (1 &lt;&lt; WGM01); <span class="comment">// Modo CTC</span></div>
+<div class="line"><span class="lineno">   77</span>    TCCR0B |= (1 &lt;&lt; CS02) | (1 &lt;&lt; CS00); <span class="comment">// Prescaler 1024</span></div>
+<div class="line"><span class="lineno">   78</span>    OCR0A = 156; <span class="comment">// Aproximadamente 1 segundo - Max value</span></div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>    <span class="comment">// Habilita a interrupção do Timer1 para conseguir rotacionar o carrinho em 180º</span></div>
+<div class="line"><span class="lineno">   81</span>    TCCR1B |= (1 &lt;&lt; WGM12); <span class="comment">// Modo CTC</span></div>
+<div class="line"><span class="lineno">   82</span>    TCCR1B |= (1 &lt;&lt; CS12) | (1 &lt;&lt; CS10); <span class="comment">// Prescaler 1024</span></div>
+<div class="line"><span class="lineno">   83</span>    OCR1A = 45000; <span class="comment">// Aproximadamente 1 segundo</span></div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">// ADC - Configuração do LDR - prescaler de 128</span></div>
+<div class="line"><span class="lineno">   86</span>    ADCSRA |= (1 &lt;&lt; ADEN) | (1 &lt;&lt; ADPS2) | (1 &lt;&lt; ADPS1) | (1 &lt;&lt; ADPS0);</div>
+<div class="line"><span class="lineno">   87</span>    ADMUX |= (1 &lt;&lt; REFS0);</div>
+<div class="line"><span class="lineno">   88</span> </div>
+<div class="line"><span class="lineno">   89</span>    <span class="comment">// Seta o baud rate</span></div>
+<div class="line"><span class="lineno">   90</span>    UBRR0H = <a class="code hl_define" href="#a7a9db3464aa99027082d9daf5f43a95d">BAUD_PRESCALER</a> &gt;&gt; 8;</div>
+<div class="line"><span class="lineno">   91</span>    UBRR0L = <a class="code hl_define" href="#a7a9db3464aa99027082d9daf5f43a95d">BAUD_PRESCALER</a>;</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>    UCSR0C = (1 &lt;&lt; UCSZ01) | (1 &lt;&lt; UCSZ00); <span class="comment">// 8-bit data, 1 stop bit</span></div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    UCSR0B = (1 &lt;&lt; RXEN0) | (1 &lt;&lt; TXEN0) | (1 &lt;&lt; RXCIE0);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    sei();  <span class="comment">// Habilita as interrupções globais</span></div>
+<div class="line"><span class="lineno">   98</span>}</div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a10c6bf127d3a3cc88cd473dc7591520e"><div class="ttname"><a href="#a10c6bf127d3a3cc88cd473dc7591520e">MOTOR_DDR</a></div><div class="ttdeci">#define MOTOR_DDR</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:29</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a147c900022d48780e251bb9f8a525c87"><div class="ttname"><a href="#a147c900022d48780e251bb9f8a525c87">INPUT3_DDR</a></div><div class="ttdeci">#define INPUT3_DDR</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:43</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a2eb4252b35effe1188cb61b6124fa617"><div class="ttname"><a href="#a2eb4252b35effe1188cb61b6124fa617">LED_DDR</a></div><div class="ttdeci">#define LED_DDR</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:35</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_a7a9db3464aa99027082d9daf5f43a95d"><div class="ttname"><a href="#a7a9db3464aa99027082d9daf5f43a95d">BAUD_PRESCALER</a></div><div class="ttdeci">#define BAUD_PRESCALER</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:25</div></div>
+<div class="ttc" id="a_gigantes-de-_m_d_f_8cpp_html_abc8c037402d180e5bb71588ea0439b7f"><div class="ttname"><a href="#abc8c037402d180e5bb71588ea0439b7f">RECEPTOR_PIN</a></div><div class="ttdeci">#define RECEPTOR_PIN</div><div class="ttdef"><b>Definição</b> Gigantes-de-MDF.cpp:36</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9b5c8d105a0b2c208dd88d6e6369bbd0" name="a9b5c8d105a0b2c208dd88d6e6369bbd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5c8d105a0b2c208dd88d6e6369bbd0">&#9670;&#160;</a></span>startTimer0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void startTimer0 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  108</span>{</div>
+<div class="line"><span class="lineno">  109</span>    TIMSK0 |= (1 &lt;&lt; OCIE0A);</div>
+<div class="line"><span class="lineno">  110</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a68dbef8e8c3dcf55ea2d76c8566cb105" name="a68dbef8e8c3dcf55ea2d76c8566cb105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68dbef8e8c3dcf55ea2d76c8566cb105">&#9670;&#160;</a></span>startTimer1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void startTimer1 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  119</span>{</div>
+<div class="line"><span class="lineno">  120</span>    TIMSK1 |= (1 &lt;&lt; OCIE1A);</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6fb467f9c95e64d4a036d52ef400e1fc" name="a6fb467f9c95e64d4a036d52ef400e1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fb467f9c95e64d4a036d52ef400e1fc">&#9670;&#160;</a></span>stopTimer0()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stopTimer0 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  101</span>{</div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// Desabilita a interrupção do Timer 1</span></div>
+<div class="line"><span class="lineno">  103</span>    TIMSK0 &amp;= ~(1 &lt;&lt; OCIE0A);</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_variable" href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">tot</a> = 0;</div>
+<div class="line"><span class="lineno">  105</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff16e71b60910d906946fa080fa15f71" name="aff16e71b60910d906946fa080fa15f71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff16e71b60910d906946fa080fa15f71">&#9670;&#160;</a></span>stopTimer1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void stopTimer1 </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="fragment"><div class="line"><span class="lineno">  113</span>{</div>
+<div class="line"><span class="lineno">  114</span>    <span class="comment">// Desabilita a interrupção do Timer 1</span></div>
+<div class="line"><span class="lineno">  115</span>    TIMSK1 &amp;= ~(1 &lt;&lt; OCIE1A);</div>
+<div class="line"><span class="lineno">  116</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variáveis</h2>
+<a id="a71c13b0fdc9fea2c36ac8fd9fd0ab838" name="a71c13b0fdc9fea2c36ac8fd9fd0ab838"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71c13b0fdc9fea2c36ac8fd9fd0ab838">&#9670;&#160;</a></span>tot</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t tot = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7897361688454104475a975cdb2728c8" name="a7897361688454104475a975cdb2728c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7897361688454104475a975cdb2728c8">&#9670;&#160;</a></span>USART_Buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t USART_Buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adaffaeb89cf09b081ce407428026d007" name="adaffaeb89cf09b081ce407428026d007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaffaeb89cf09b081ce407428026d007">&#9670;&#160;</a></span>vidas</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile uint8_t vidas = 3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
